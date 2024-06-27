@@ -1,0 +1,52 @@
+.container {
+  max-width: 90vw;
+  margin-inline: auto;
+  margin-top: 3.8rem;
+}
+
+@media (min-width: 50em) {
+  .container {
+    max-width: 87rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+}
+
+.sortButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 50em) {
+  .sortButtons {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 1.6rem;
+  }
+}
+
+.noUserMessage {
+  composes: container;
+  font-size: 1.5rem;
+}
+
+.message {
+  composes: container;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.list {
+  margin-top: 3.2rem;
+  display: grid;
+  gap: 1.6rem;
+}
+@media (min-width: 50em) {
+  .list {
+    margin-top: 0;
+    width: 100%;
+  }
+}
